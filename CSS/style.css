@@ -1,0 +1,742 @@
+/* Start Global */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: "FontAwesome";
+    src: url("fonts/fontawesome-webfont.eot");
+    src: url("fonts/fontawesome-webfont.woff");
+}
+
+ul
+{
+    list-style: none;
+}
+
+button:focus
+{
+    outline: none
+}
+
+/* End Global */
+
+/* Start Navbar */
+
+.navbar 
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    margin-top: 30px;
+}
+
+.navbar-inverse
+{
+    background: none;
+    border: none
+}
+
+.navbar .navbar-brand
+{
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #E3E3E3;
+    display: inline-block;
+    font-size: 27px;
+    margin-top: -5px
+}
+
+.navbar span 
+{
+    padding: 3px 10px;
+    background-color: #D53939;
+    color: #E3E3E3;
+    font-size: 10px;
+    border-radius: 2px;
+    line-height: 4;
+    text-transform: uppercase
+}
+
+.navbar-inverse .navbar-toggle
+{
+    border-color: none
+}
+
+.navbar-inverse .navbar-nav > li
+{
+    display: inline-block;
+    font-family: Roboto;
+    text-transform: uppercase;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.navbar-inverse .navbar-nav > li > a
+{
+    color: #E3E3E3;
+    padding: 7px 15px;
+}
+
+.navbar-inverse .navbar-nav > .active > a
+{
+    background-color: #D53939;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar-inverse .navbar-nav > li:last-child
+{
+    margin-right: 0
+}
+
+.navbar-inverse .navbar-nav > li:hover
+{
+    background-color: #D53939;
+    cursor: pointer;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover
+{
+    background-color: #D53939;
+    cursor: pointer;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header
+{
+    background-image: url(../Images/header-background.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 854px
+}
+
+.header:after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.97);
+}
+
+.header .bx-wrapper
+{
+    height: 100%;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .bx-wrapper .bx-viewport
+{
+    height: 100% !important;
+    text-align: center;
+    z-index: 9;
+    width: 100%;
+}
+
+.header .bxslider
+{
+    height: 100%;
+    padding-top: 20% !important;
+}
+
+.header .bxslider li
+{
+    overflow: hidden;
+    visibility: hidden;
+    margin-top: 10px;
+}
+
+.header .bxslider li h2
+{
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: #E3E3E3;
+    font-size: 40px;
+    padding: 15px;
+    border: 2px solid #444;
+    display: inline-block
+}
+
+.header .bxslider li p
+{
+    font-family: Roboto;
+    color: #E3E3E3;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 15px;
+    width: 70%;
+    margin: auto
+}
+
+.header .bxslider li button
+{
+    font-family: Roboto;
+    background: none;
+    color: #E3E3E3;
+    border: 0;
+    padding: 15px 23px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.header .bxslider li button:first-of-type
+{
+    background: #D53939
+}
+
+.header .bxslider li button:first-of-type:hover
+{
+    background: #ea3e3e
+}
+
+.header .bxslider li button:last-of-type
+{
+    background: #121212
+}
+
+.header .bxslider li button:last-of-type:hover
+{
+    background: #FFF;
+    color: #121212;
+    font-weight: 500
+}
+
+.header .bx-wrapper .bx-pager
+{
+    bottom: 30px;
+    z-index: 9
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus
+{
+    background: #D53939 !important
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a
+{
+    background: #232323 !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%!important;
+}
+
+/* End Header */
+
+/* Start Website */
+
+.website
+{
+    width: 100%;
+}
+
+.website .create
+{
+    margin-top: 120px;
+    font-family: Roboto;
+    font-weight: 200
+}
+
+.website .create h2
+{
+    font-weight: 200;
+    font-size: 40px;
+    color: #444;
+}
+
+.website .create p
+{
+    font-size: 25px;
+    color: #bcbcbc;
+    margin-bottom: 100px;
+}
+
+.website .create .website-one button,
+.website .create .website-two button
+{
+    font-family: Roboto;
+    margin: 0 auto;
+    background: none;
+    color: #E3E3E3;
+    border: 0;
+    padding: 15px 23px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-right: 18px;
+    display: inline-block;
+    float: none
+}
+
+.website .create .website-one button:first-of-type
+{
+    background: #D53939
+}
+
+.website .create .website-one button:last-of-type
+{
+    background: #121212;
+    margin-bottom: 25px
+}
+
+.website .create .website-two button:first-of-type
+{
+    background: #121212;
+}
+
+.website .create .website-two button:last-of-type
+{
+    background: #D53939;
+}
+
+/* End Website */
+
+/* Start About */
+
+.about-us
+{
+    background: url(../Images/about2-background.jpeg) no-repeat center center fixed;
+    min-height: 425px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin-top: 100px
+}
+
+.about-us .about
+{
+    background-color: rgba(51, 51, 51, 0.9);
+    width: 100%;
+    height: 100%;
+    min-height: 425px;
+}
+
+.about-us .about
+{
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.about-us .about h2
+{
+    font-weight: 300;
+    color: #E3E3E3;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.about-us .about .circle
+{
+    color: #E3E3E3;
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border: 2px solid rgba(131, 131, 131, 0.14);
+    border-radius: 50%;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.about-us .about .circle h3
+{
+    font-size: 45px;
+    margin-bottom: 5px;
+    margin-top: 35%;
+    font-weight: 500
+}
+
+.about-us .about .circle span
+{
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase
+}
+/* End About */
+
+/* Start Services */
+
+.service
+{
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.service .serv
+{
+    font-family: Roboto;
+    font-weight: 200
+}
+
+.service .serv h2
+{
+    font-weight: 200;
+    font-size: 40px;
+    color: #444;
+    text-align: center;
+}
+
+.service .serv p
+{
+    font-size: 25px;
+    color: #afafaf;
+    text-align: center;
+}
+
+.service .serv .item
+{
+    float: left;
+    font-family: Roboto;
+    margin-top: 70px
+}
+
+.service .serv .ser h3
+{
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #333
+}
+
+.service .serv .ser
+{
+    width: 70%;
+    float: left;
+}
+
+.service .serv .ser p
+{
+    font-size: 15px;
+    text-align: left;
+    line-height: 23px;
+    color: #afafaf
+}
+
+.service .item i
+{
+    float: left;
+    width: 28%;
+    color: #D53939;
+    text-align: center;
+}
+
+/* End Services */
+
+/* Start Get Started */
+
+.get-started
+{
+    background-image: url(../Images/Started-background.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.get-started .start
+{
+    background-color: rgba(49, 50, 54, 0.95);
+    min-height: 275px;
+}
+
+.get-started .start
+{
+    text-align: center;
+}
+
+.get-started .start h3
+{
+    color: #E3E3E3;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 23px;
+    padding-top: 40px;
+    padding-bottom: 10px
+}
+
+.get-started .start p
+{
+    color: #d8d8d8;
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 25px;
+    margin-bottom: 40px
+}
+
+.get-started .start button
+{
+    font-family: Roboto;
+    background: none;
+    color: #E3E3E3;
+    border: 0;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 2px solid #E3E3E3;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.get-started .start button:hover
+{
+    background-color: #E3E3E3;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    border: 2px solid #E4E4E4;
+}
+
+/* End Get Started */
+
+/* Start Themes */
+
+.themes 
+{
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.themes .cont
+{
+    padding-bottom: 50px
+}
+
+.themes .cont h2
+{
+    font-weight: 200;
+    font-size: 40px;
+    color: #444;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.themes .cont p
+{
+    font-weight: 200;
+    font-size: 25px;
+    color: #bcbcbc;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.themes .content
+{
+    width: 100%;
+}
+
+.themes .content .checker
+{
+}
+
+.themes .content .check
+{
+    float: right;
+    margin-top: 30px
+}
+
+.themes .content .check i
+{
+    text-align: center;
+    margin-top: 10px;
+    color: #5CB85C
+}
+
+.themes .content .check .item
+{
+    float: left;
+}
+
+.themes .content .check .item p
+{
+    line-height: 25px;
+    font-family: Roboto;
+    color: #444
+}
+
+/* End Themes */
+
+/* Start Footer */
+
+.footer
+{
+    width: 100%;
+    margin-top: 150px;
+    background-color: #333;
+}
+
+.footer .foot .message
+{
+    margin: 0 auto;
+    margin-top: -36px;
+    padding: 20px 50px;
+    background-color: #D53939;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 300;
+    color: #E3E3E3;
+    font-size: 23px;
+    width: 70%;
+}
+
+.footer .foot .icons
+{
+    margin-top: 60px;
+    text-align: center;
+    padding: 0
+}
+
+.footer .foot .icons li
+{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.footer .foot .icons li:first-child {background-color: #D53939}
+.footer .foot .icons li:first-child:hover {background-color: #eb3939}
+
+.footer .foot .icons li:nth-child(2) {background-color: #1EB5BB}
+.footer .foot .icons li:nth-child(2):hover {background-color: #25c3c9}
+
+.footer .foot .icons li:nth-child(3) {background-color: #F78C3F}
+.footer .foot .icons li:nth-child(3):hover {background-color: #ff984d}
+
+.footer .foot .icons li:last-child {background-color: #D055DE}
+.footer .foot .icons li:last-child:hover {background-color: #df58ef}
+
+.footer .foot .icons li i
+{
+    line-height: 30px;
+    color: #E3E3E3;
+}
+
+.footer .foot .copy
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #E3E3E3;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: lighter
+}
+
+.footer .foot .copy a
+{
+    color: #E3E3E3;
+}
+
+/* End Footer */
+
+/* Start Scroll To Top */
+
+.scroll
+{
+    color: #D53939;
+    font-size: 45px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    display: none;
+    background: none;
+    border: none;
+}
+
+.scroll:hover
+{
+    color: #eb3939;
+    cursor: pointer;
+}
+
+/* End Scroll To Top */
+
+/* Start Media Query */
+
+@media (max-width: 768px)
+{
+    .navbar .navbar-brand
+    {
+        margin-top: 8px !important
+    }
+    
+    .navbar span
+    {
+        line-height: 6.2 !important
+    }
+    
+    .navbar-inverse .navbar-nav > li,
+    .navbar-inverse .navbar-nav > li.active
+    {
+        display: block;
+        border-radius: 0px !important;
+        text-align: center;
+        padding: 15px 0!important;
+        width: 100%
+    }
+        
+    .navbar-inverse .navbar-nav > .active > a
+    {
+        border-radius: 0px !important;
+        width: 100% !important;
+        padding: 15px 0 !important
+    }
+    
+    .navbar-inverse .navbar-nav > li:hover
+    {
+        border-radius: 0px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 800px)
+{
+    .navbar-collapse.collapse
+    {
+        display: none !important
+    }
+    
+    .navbar-toggle
+    {
+        display: block;
+        float: right !important
+    }
+    
+    .collapse.in
+    {
+        display: block !important
+    }
+    
+    .navbar-header
+    {
+        float: none
+    }
+}
